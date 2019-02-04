@@ -1,17 +1,4 @@
 @import "https://heerschop.github.io/pen/default.css";
-body div {
-    all: initial;
-    box-sizing: border-box;
-    border-color: rgba(128, 128, 128, 0.8);
-    border-style: solid;
-    border-width: 2px;
-    width: 300px;
-    height: 300px;
-    margin: 30px;
-    resize: both;
-    overflow: hidden;
-}
-
 body div div {
     all: initial;
     box-sizing: border-box;
