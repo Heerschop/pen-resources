@@ -5,8 +5,9 @@ body div {
     border-color: rgba(128, 128, 128, 0.8);
     border-style: solid;
     border-width: 2px;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
     resize: both;
     overflow: hidden;
 }

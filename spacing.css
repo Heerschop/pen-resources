@@ -10,6 +10,7 @@ body div {
     margin: 30px;
     resize: both;
     overflow: hidden;
+    padding: 2px;
 }
 
 body div div {
