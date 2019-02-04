@@ -27,8 +27,6 @@ body div div {
     all: initial;
     box-sizing: border-box;
     background: rgba(0, 128, 128, 0.8);
-    width: 100px;
-    height: 100px;
     z-index: -1;
     margin: 2px;
     padding: 2px;
@@ -37,8 +35,6 @@ body div div {
 body div div div {
     all: initial;
     background: rgba(128, 0, 128, 0.8);
-    width: 80px;
-    height: 80px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: bold;
     display: flex;
