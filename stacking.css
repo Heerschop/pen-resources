@@ -1,27 +1,28 @@
 @import "https://heerschop.github.io/pen/default.css";
-
 body div {
-  all: initial;
-  display: grid;
-  grid-template-columns: auto auto;
+    all: initial;
+    display: grid;
+    grid-template-columns: auto auto;
 }
+
 body div div {
-  all: initial;
-  border-color:rgba(128, 128,128, 0.8);
-  border-style:solid;
-  border-width:2px;
-  width:172px;
-  height:172px;
-  margin:4px;
-  resize: both;
-  overflow: hidden;
-  padding:2px;
+    all: initial;
+    border-color: rgba(128, 128, 128, 0.8);
+    border-style: solid;
+    border-width: 2px;
+    width: 172px;
+    height: 172px;
+    margin: 4px;
+    resize: both;
+    overflow: hidden;
+    padding: 2px;
 }
+
 body div div div {
-  all: initial;
-  background:rgba(0, 128, 128, 0.8);
-  width:40px;
-  height:40px;
-  margin:2px;
-  z-index: -1;
+    all: initial;
+    background: rgba(0, 128, 128, 0.8);
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    z-index: -1;
 }
