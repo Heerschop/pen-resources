@@ -1,13 +1,5 @@
-body {
-  background-color: #1d1e22;
-  position: absolute;
-  width:100%;
-  height:100%;
-  margin:0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "https://heerschop.github.io/pen-resources/default-style.css";
+
 body div {
   all: initial;
   display: grid;
