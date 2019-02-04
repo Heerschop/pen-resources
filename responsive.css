@@ -1,0 +1,22 @@
+@import "https://heerschop.github.io/pen/default.css";
+body div {
+    all: initial;
+    box-sizing: border-box;
+    border-color: rgba(128, 128, 128, 0.8);
+    border-style: solid;
+    border-width: 2px;
+    min-width: 612px;
+    min-height: 320px;
+    width: 612px;
+    height: 320px;
+    resize: both;
+    overflow: hidden;
+    padding: 2px;
+}
+
+body div div {
+    all: initial;
+    background: rgba(0, 128, 128, 0.8);
+    z-index: -1;
+    margin: 2px;
+}
