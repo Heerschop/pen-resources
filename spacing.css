@@ -7,9 +7,3 @@ div div {
     height: 180px;
     margin: auto;
 }
-
-div div div {
-    box-sizing: initial;
-    width: 100%;
-    height: 100%;
-}
