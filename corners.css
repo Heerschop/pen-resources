@@ -1,11 +1,11 @@
 @import "https://heerschop.github.io/pen/default.css";
 
-body div div {
+div div {
     width: 100px;
     height: 100px;
 }
 
-body div div div {
+div div div {
     width: 50px;
     height: 50px;
 }

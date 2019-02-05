@@ -1,12 +1,12 @@
 @import "https://heerschop.github.io/pen/default.css";
 
-body div {
+div {
     all: initial;
     display: grid;
     grid-template-columns: auto auto;
 }
 
-body div div {
+div div {
     all: initial;
     border-color: rgba(128, 128, 128, 0.8);
     border-style: solid;
@@ -19,7 +19,7 @@ body div div {
     padding: 2px;
 }
 
-body div div div {
+div div div {
     all: initial;
     background: rgba(0, 128, 128, 0.8);
     width: 40px;
