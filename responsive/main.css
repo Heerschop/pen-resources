@@ -1,0 +1,23 @@
+@import "https://heerschop.github.io/pen/responsive/style.css";
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.micro {
+  width: 48px;
+  height: 100px;
+}
+
+.small {
+  width: 180px;
+  height: 100px;
+}
+
+.large {
+  width: 280px;
+  height: 100px;
+}

@@ -1,0 +1,37 @@
+@import "https://heerschop.github.io/pen/stretch.css";
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.border-horizontal {
+  background: rgba(128, 0, 128, 0.8);
+  max-width: 50px;
+  min-width: 50px;
+  height: auto;
+}
+
+.center-horizontal {
+  background: rgba(0, 128, 128, 0.8);
+  width: 100%;
+  height: auto;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.border-vertical {
+  background: rgba(128, 0, 128, 0.8);
+  max-height: 50px;
+  min-height: 50px;
+  width: auto;
+}
+
+.center-vertical {
+  background: rgba(0, 128, 128, 0.8);
+  width: auto;
+  height: 100%;
+}
