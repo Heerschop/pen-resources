@@ -1,0 +1,53 @@
+@import "https://heerschop.github.io/pen/corners/style.css";
+
+.container {
+  position: relative;
+}
+
+.left-top-self {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.right-top-self {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.left-bottom-self {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.right-bottom-self {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.left-top-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.right-top-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.left-bottom-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.right-bottom-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
