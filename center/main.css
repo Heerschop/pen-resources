@@ -1,0 +1,22 @@
+@import "https://heerschop.github.io/pen/center.css";
+
+.flex {
+  display: flex;
+}
+
+.center-self-flex {
+  margin: auto;
+}
+
+.center-self-transform {
+  left: 50%;
+  top: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
