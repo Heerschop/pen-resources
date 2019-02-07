@@ -26,6 +26,8 @@ body {
   left: 0px;
   top: 0px;
   background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
 }
 
 iframe {

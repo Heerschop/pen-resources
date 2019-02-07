@@ -1,6 +1,6 @@
 @import "https://heerschop.github.io/pen/default.css";
 
-div div {
+body > div > div {
   box-sizing: initial;
   padding: 0px;
   width: 220px;
