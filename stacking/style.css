@@ -1,11 +1,21 @@
 @import "https://heerschop.github.io/pen/default.css";
 
 body > div {
+  border-style: initial;
+  overflow: initial;
+  margin: initial;
+  padding: initial;
+  width: initial;
+  height: initial;
+
   display: grid;
   grid-template-columns: auto auto;
 }
 
 body > div > div {
+  box-sizing: initial;
+  background: initial;
+
   border-color: rgba(128, 128, 128, 0.8);
   border-style: solid;
   border-width: 2px;
