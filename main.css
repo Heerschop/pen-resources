@@ -14,20 +14,36 @@ body {
   justify-content: center;
   align-content: flex-start;
 }
-.container div {
-  margin: 10px;
+.container > div {
+  margin: 16px;
   position: relative;
   width: 700px;
   height: 360px;
+  border: solid;
 }
-.container div div {
-  margin: 0px;
+.container > div > div {
+  padding: 8px;
   position: absolute;
-  left: 0px;
-  top: 0px;
   background: rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.container > div > div > div {
+  padding: 8px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 iframe {
