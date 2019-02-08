@@ -1,9 +1,49 @@
 function onOverlayClick(value) {
-  console.log('onOverlayClick: ', value);
   window.location = value + '/index.html';
 }
 
+
 function onPenClick(value) {
-  console.log('onPenClick: ', value);
   window.open('https://codepen.io/heerschop/pen/' + value);
+}
+
+
+function includeHTML() {
+
+  for (const element of document.getElementsByTagName("*")) {
+    const file = element.getAttribute("include-html");
+
+    if (file) {
+      const http = new XMLHttpRequest();
+
+      http.onreadystatechange = function () {
+        if (this.readyState == 4) {
+
+          if (this.status == 200) { element.innerHTML = this.responseText; }
+          if (this.status == 404) { element.innerHTML = "Page not found."; }
+
+          element.removeAttribute("include-html");
+
+          for (let index = 0; index < element.attributes.length; index++) {
+            const attribute = element.attributes.item(index);
+            const matches = attribute.name.match(/^\[(.*)\]$/);
+
+            if (matches !== null) {
+              const attributeName = matches[1];
+              const expression = new RegExp('{{' + attributeName + '}}', 'g');
+
+              element.innerHTML = element.innerHTML.replace(expression, attribute.value);
+            }
+          }
+
+          includeHTML();
+        }
+      }
+
+      http.open("GET", file, true);
+      http.send();
+
+      return;
+    }
+  }
 }
