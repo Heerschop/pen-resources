@@ -18,8 +18,8 @@ body {
 
 .frame-component {
   margin: 16px;
-  width: 700px;
-  height: calc(360px + 48px);
+  width: calc((320px + 40px) * 2 + 40px);
+  height: calc((320px + 40px) * 1 + 40px + 48px);
   border: solid;
 }
 

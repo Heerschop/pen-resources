@@ -17,10 +17,10 @@ body > div {
   border-width: 2px;
   resize: both;
   overflow: hidden;
-  margin: 30px;
+  margin: 20px;
   padding: 2px;
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
 }
 
 body > div > div {
