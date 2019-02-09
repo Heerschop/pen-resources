@@ -6,26 +6,26 @@
 
 .left-top-self {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 2px;
+  top: 2px;
 }
 
 .right-top-self {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 2px;
+  top: 2px;
 }
 
 .left-bottom-self {
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  left: 2px;
+  bottom: 2px;
 }
 
 .right-bottom-self {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 2px;
+  bottom: 2px;
 }
 
 .left-top-content {
