@@ -1,9 +1,12 @@
-<div class="frame-container">
-  <iframe scrolling="no" frameborder="0" src="{{name}}/index.html"></iframe>
-  <div class="overlay" onclick="onOverlayClick('stretch')">
-    <div class="header">
+<div class="component-container">
+  <div class="header">
+    <h3>
       {{name}}
-      <button class="penButton" onclick="onPenClick('{{pen-name}}')">pen</button>
-    </div>
+    </h3>
+    <button class="penButton" onclick="onPenClick('{{pen-name}}')">pen</button>
+  </div>
+  <div class="frame">
+    <iframe scrolling="no" frameborder="0" src="{{name}}/index.html"></iframe>
+    <div class="overlay" onclick="onOverlayClick('{{name}}')"></div>
   </div>
 </div>

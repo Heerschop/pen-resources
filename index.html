@@ -12,64 +12,12 @@
 
 <body>
   <div class="main-container">
-    <div class="frame-container">
-      <iframe scrolling="no" frameborder="0" src="center/index.html"></iframe>
-      <div class="overlay" onclick="onOverlayClick('center')">
-        <div class="header">
-          center
-          <button class="penButton" onclick="onPenClick('xMdoJd')">pen</button>
-        </div>
-        <div class="content">
-        </div>
-      </div>
-    </div>
-    <div class="frame-container">
-      <iframe scrolling="no" frameborder="0" src="corners/index.html"></iframe>
-      <div class="overlay" onclick="onOverlayClick('corners')">
-        <div class="header">
-          corners
-          <button class="penButton" onclick="onPenClick('jdazwa')">pen</button>
-        </div>
-      </div>
-    </div>
-    <div class="frame-container">
-      <iframe scrolling="no" frameborder="0" src="responsive/index.html"></iframe>
-      <div class="overlay" onclick="onOverlayClick('responsive')">
-        <div class="header">
-          responsive
-          <button class="penButton" onclick="onPenClick('qgmwMQ')">pen</button>
-        </div>
-      </div>
-    </div>
-    <div class="frame-container">
-      <iframe scrolling="no" frameborder="0" src="spacing/index.html"></iframe>
-      <div class="overlay" onclick="onOverlayClick('spacing')">
-        <div class="header">
-          spacing
-          <button class="penButton" onclick="onPenClick('rPwYxX')">pen</button>
-        </div>
-      </div>
-    </div>
-    <div class="frame-container">
-      <iframe scrolling="no" frameborder="0" src="stacking/index.html"></iframe>
-      <div class="overlay" onclick="onOverlayClick('stacking')">
-        <div class="header">
-          stacking
-          <button class="penButton" onclick="onPenClick('wNdrzq')">pen</button>
-        </div>
-      </div>
-    </div>
-    <div class="frame-container">
-      <iframe scrolling="no" frameborder="0" src="stretch/index.html"></iframe>
-      <div class="overlay" onclick="onOverlayClick('stretch')">
-        <div class="header">
-          stretch
-          <button class="penButton" onclick="onPenClick('ErmBNP')">pen</button>
-        </div>
-      </div>
-    </div>
-    <div include-html="frame-component.html" [name]="center" [pen-name]='xMdoJd' style="border-color: red;border-style: solid"></div>
-    <div include-html="frame-component.html" [name]="stretch" [pen-name]='ErmBNP' style="border-color: red;border-style: solid"></div>
+    <div class="frame-component" include-html="frame-component.html" [name]="center" [pen-name]='xMdoJd'></div>
+    <div class="frame-component" include-html="frame-component.html" [name]="corners" [pen-name]='jdazwa'></div>
+    <div class="frame-component" include-html="frame-component.html" [name]="responsive" [pen-name]='qgmwMQ'></div>
+    <div class="frame-component" include-html="frame-component.html" [name]="spacing" [pen-name]='rPwYxX'></div>
+    <div class="frame-component" include-html="frame-component.html" [name]="stacking" [pen-name]='wNdrzq'></div>
+    <div class="frame-component" include-html="frame-component.html" [name]="stretch" [pen-name]='ErmBNP'></div>
   </div>
 </body>
 <script>

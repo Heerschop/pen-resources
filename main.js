@@ -18,23 +18,27 @@ function includeHTML() {
 
       http.onreadystatechange = function () {
         if (this.readyState == 4) {
+          if (this.status == 200) {
+            let innerHTML = this.responseText;
 
-          if (this.status == 200) { element.innerHTML = this.responseText; }
+            for (let index = 0; index < element.attributes.length; index++) {
+              const attribute = element.attributes.item(index);
+              const matches = attribute.name.match(/^\[(.*)\]$/);
+
+              if (matches !== null) {
+                const attributeName = matches[1];
+                const expression = new RegExp('{{' + attributeName + '}}', 'g');
+
+                innerHTML = innerHTML.replace(expression, attribute.value);
+              }
+            }
+
+            element.innerHTML = innerHTML;
+          }
+
           if (this.status == 404) { element.innerHTML = "Page not found."; }
 
           element.removeAttribute("include-html");
-
-          for (let index = 0; index < element.attributes.length; index++) {
-            const attribute = element.attributes.item(index);
-            const matches = attribute.name.match(/^\[(.*)\]$/);
-
-            if (matches !== null) {
-              const attributeName = matches[1];
-              const expression = new RegExp('{{' + attributeName + '}}', 'g');
-
-              element.innerHTML = element.innerHTML.replace(expression, attribute.value);
-            }
-          }
 
           includeHTML();
         }
