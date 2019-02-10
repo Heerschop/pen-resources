@@ -35,19 +35,19 @@
 }
 
 .left-top-self-margin {
-  margin: 0px auto auto 0px;
+  margin: 2px auto auto 2px;
 }
 
 .right-top-self-margin {
-  margin: 0px 0px auto auto;
+  margin: 2px 2px auto auto;
 }
 
 .left-bottom-self-margin {
-  margin: auto auto 0px 0px;
+  margin: auto auto 2px 2px;
 }
 
 .right-bottom-self-margin {
-  margin: auto 0px 0px auto;
+  margin: auto 2px 2px auto;
 }
 
 .left-top-content {
