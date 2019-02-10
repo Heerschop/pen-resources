@@ -9,8 +9,11 @@ function onPenClick(value) {
 
 
 function includeHTML() {
+  const elements = document.getElementsByTagName("*");
 
-  for (const element of document.getElementsByTagName("*")) {
+  //for (const element of document.getElementsByTagName("*")) {
+  for (let index = 0; index < elements.length; index++) {
+    const element = elements[index];
     const file = element.getAttribute("include-html");
 
     if (file) {

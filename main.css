@@ -62,7 +62,7 @@ body {
   right: 0px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0px 8px 0px 0px;
   font-size: 16px;
 }
