@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.container-margin {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
 .left-top-self {
   position: absolute;
   left: 2px;
@@ -26,6 +32,22 @@
   position: absolute;
   right: 2px;
   bottom: 2px;
+}
+
+.left-top-self-margin {
+  margin: 0px auto auto 0px;
+}
+
+.right-top-self-margin {
+  margin: 0px 0px auto auto;
+}
+
+.left-bottom-self-margin {
+  margin: auto auto 0px 0px;
+}
+
+.right-bottom-self-margin {
+  margin: auto 0px 0px auto;
 }
 
 .left-top-content {
