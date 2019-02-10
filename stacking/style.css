@@ -5,11 +5,10 @@ body > div {
   overflow: visible;
   margin: 0px 15px 0px 15px;
   padding: 0px;
-  width: auto;
-  height: auto;
-
-  display: grid;
-  grid-template-columns: auto auto;
+  width: calc(320px + 5px * 2);
+  height: calc(320px + 5px * 2);
+  display: flex;
+  flex-flow: row wrap;
 }
 
 body > div > div {
@@ -22,8 +21,6 @@ body > div > div {
   width: 155px;
   height: 155px;
   margin: 5px;
-  resize: both;
-  overflow: hidden;
   padding: 2px;
 }
 
