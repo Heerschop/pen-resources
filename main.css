@@ -39,12 +39,11 @@ body {
   min-height: 48px;
   width: auto;
   display: flex;
-  align-items: center;
-  padding: 0px 0px 0px 8px;
+  padding: 0px 8px 0px 8px;
 }
 
 .header-title {
-  width: 100%;
+  margin: auto auto auto 0px;
 }
 
 .pen-button {
@@ -58,7 +57,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 8px 0px 0px;
+  margin: auto 0px auto auto;
   font-size: 16px;
 }
 
