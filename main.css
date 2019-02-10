@@ -31,7 +31,7 @@ body {
   height: 100%;
 }
 
-.component-container .header {
+.header-content {
   background: rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
@@ -43,34 +43,37 @@ body {
   padding: 0px 0px 0px 8px;
 }
 
-.frame {
+.header-title {
   width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
 }
 
-.penButton {
+.pen-button {
   border: 0px;
   background: rgba(255, 0, 0, 0.2);
-  position: absolute;
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
   width: 80px;
   height: 32px;
   border-radius: 8px;
-  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 8px 0px 0px;
   font-size: 16px;
 }
-.penButton:hover {
+
+.pen-button:hover {
   background: rgba(255, 0, 0, 0.4);
 }
 
-.overlay {
+.frame-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.frame-overlay {
   background: rgba(0, 0, 0, 0);
   position: absolute;
   left: 0px;
@@ -79,7 +82,7 @@ body {
   right: 0px;
 }
 
-.overlay:hover {
+.frame-overlay:hover {
   background: rgba(255, 255, 255, 0.075);
 }
 
