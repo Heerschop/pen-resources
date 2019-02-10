@@ -10,3 +10,7 @@ body > div > div > div {
   height: 50px;
   margin: 2px;
 }
+
+.container h4 {
+  height: 100%;
+}
