@@ -8,3 +8,6 @@
 * [How TO - Include HTML](https://www.w3schools.com/howto/howto_html_include.asp)
 * [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
 * [Shareicon](https://www.shareicon.net/tag/css-symbol)
+
+* [https://github.com/syntaxhighlighter/syntaxhighlighter](syntaxhighlighter)
+* [https://github.com/google/code-prettify](code-prettify)

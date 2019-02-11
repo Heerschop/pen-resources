@@ -3,6 +3,37 @@ function onOverlayClick(value) {
 }
 
 
+function onHtmlClick(value) {
+  const elementId = 'frame-overlay-' + value;
+  const file = value + '/index.html';
+
+  loadFileContent(elementId, file);
+}
+
+function onCssClick(value) {
+  const elementId = 'frame-overlay-' + value;
+  const file = value + '/index.css';
+
+  loadFileContent(elementId, file);
+}
+
+function loadFileContent(elementId, file) {
+  const element = document.getElementById(elementId);
+  const http = new XMLHttpRequest();
+
+  element.className = "frame-overlay-text";
+
+  http.onreadystatechange = function () {
+    element.innerHTML = '<xmp class="prettyprint">' + this.responseText + '</xmp>';
+    PR.prettyPrint()
+  };
+
+  http.open("GET", file, true);
+  http.send();
+}
+
+
+
 function onPenClick(value) {
   window.open('https://codepen.io/heerschop/pen/' + value);
 }
