@@ -3,10 +3,12 @@
     <h3 class="header-title">
       {{name}}
     </h3>
-    <button class="pen-button" onclick="onPenClick('{{pen-name}}')">pen</button>
+    <button class="header-button" onclick="onHtmlClick('{{name}}')">html</button>
+    <button class="header-button" onclick="onCssClick('{{name}}')">css</button>
+    <button class="header-button" onclick="onPenClick('{{pen-name}}')">pen</button>
   </div>
   <div class="frame-container">
     <iframe scrolling="no" frameborder="0" src="{{name}}/index.html"></iframe>
-    <div class="frame-overlay" onclick="onOverlayClick('{{name}}')"></div>
+    <div id="frame-overlay-{{name}}" class="frame-overlay" onclick="onOverlayClick('{{name}}')"></div>
   </div>
 </div>
