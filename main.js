@@ -1,5 +1,9 @@
+const toggler = {};
+
 function onOverlayClick(value) {
-  window.location = value + '/index.html';
+  const elementId = 'frame-overlay-' + value;
+
+  if (toggler[elementId] === undefined) window.location = value + '/index.html';
 }
 
 
@@ -7,21 +11,34 @@ function onHtmlClick(value) {
   const elementId = 'frame-overlay-' + value;
   const file = value + '/index.html';
 
-  loadFileContent(elementId, file);
+  toggleFileContent(elementId, file, 'HTML');
 }
+
 
 function onCssClick(value) {
   const elementId = 'frame-overlay-' + value;
   const file = value + '/index.css';
 
-  loadFileContent(elementId, file);
+  toggleFileContent(elementId, file, 'CSS');
 }
 
-function loadFileContent(elementId, file) {
+
+
+function toggleFileContent(elementId, file, buttonId) {
   const element = document.getElementById(elementId);
+
+  if (toggler[elementId] === buttonId) {
+    element.className = 'frame-overlay';
+    element.innerHTML = null;
+    toggler[elementId] = undefined;
+    return;
+  }
+
+  toggler[elementId] = buttonId;
+
   const http = new XMLHttpRequest();
 
-  element.className = "frame-overlay-text";
+  element.className = 'frame-overlay-text';
 
   http.onreadystatechange = function () {
     element.innerHTML = '<xmp class="prettyprint">' + this.responseText + '</xmp>';
@@ -31,7 +48,6 @@ function loadFileContent(elementId, file) {
   http.open("GET", file, true);
   http.send();
 }
-
 
 
 function onPenClick(value) {
