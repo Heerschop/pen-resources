@@ -11,3 +11,5 @@
 
 * [https://github.com/syntaxhighlighter/syntaxhighlighter](syntaxhighlighter)
 * [https://github.com/google/code-prettify](code-prettify)
+* [https://www.npmjs.com/package/markdown-it](markdown-it)
+* [https://github.com/evilstreak/markdown-js](markdown-js)

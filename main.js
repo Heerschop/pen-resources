@@ -2,17 +2,23 @@ function onOverlayClick(name) {
   window.location = name + '/index.html';
 }
 
-function onCheckboxHtmlClick(checked, name) {
-  const element = document.getElementById('checkbox-css-' + name);
+function onCheckboxDocClick(checked, name) {
+  document.getElementById('checkbox-css-' + name).checked = false;
+  document.getElementById('checkbox-html-' + name).checked = false;
 
-  element.checked = false;
+  toggleFileContent(name, checked, 'README.md');
+}
+
+function onCheckboxHtmlClick(checked, name) {
+  document.getElementById('checkbox-doc-' + name).checked = false;
+  document.getElementById('checkbox-css-' + name).checked = false;
 
   toggleFileContent(name, checked, 'index.html');
 }
-function onCheckboxCssClick(checked, name) {
-  const element = document.getElementById('checkbox-html-' + name);
 
-  element.checked = false;
+function onCheckboxCssClick(checked, name) {
+  document.getElementById('checkbox-doc-' + name).checked = false;
+  document.getElementById('checkbox-html-' + name).checked = false;
 
   toggleFileContent(name, checked, 'index.css');
 }
@@ -31,14 +37,13 @@ function toggleFileContent(name, checked, file) {
 
   const http = new XMLHttpRequest();
 
-
   http.onreadystatechange = function () {
     if (this.readyState == 4) {
       element.className = 'frame-overlay-text';
       element.onclick = null;
 
       if (this.status == 200) {
-        element.innerHTML = '<xmp class="prettyprint">' + this.responseText + '</xmp>';;
+        element.innerHTML = '<?prettify?><xmp class="prettyprint">' + this.responseText + '</xmp>';;
         PR.prettyPrint()
       }
 

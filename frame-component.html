@@ -4,6 +4,10 @@
       {{name}}
     </h3>
     <label class="toggle-button">
+      <input id="checkbox-doc-{{name}}" type="checkbox" onclick="onCheckboxDocClick(event.srcElement.checked,'{{name}}')">
+      <span>doc</span>
+    </label>
+    <label class="toggle-button">
       <input id="checkbox-html-{{name}}" type="checkbox" onclick="onCheckboxHtmlClick(event.srcElement.checked,'{{name}}')">
       <span>html</span>
     </label>
