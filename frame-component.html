@@ -3,8 +3,14 @@
     <h3 class="header-title">
       {{name}}
     </h3>
-    <button class="header-button" onclick="onHtmlClick('{{name}}')">html</button>
-    <button class="header-button" onclick="onCssClick('{{name}}')">css</button>
+    <label class="toggle-button">
+      <input id="checkbox-html" type="checkbox" onclick="onCheckboxHtmlClick(event.srcElement.checked,'{{name}}')">
+      <span>html</span>
+    </label>
+    <label class="toggle-button">
+      <input id="checkbox-css" type="checkbox" onclick="onCheckboxCssClick(event.srcElement.checked,'{{name}}')">
+      <span>css</span>
+    </label>
     <button class="header-button" onclick="onPenClick('{{pen-name}}')">pen</button>
   </div>
   <div class="frame-container">

@@ -1,51 +1,45 @@
-const toggler = {};
-
-function onOverlayClick(value) {
-  const elementId = 'frame-overlay-' + value;
-
-  if (toggler[elementId] === undefined) window.location = value + '/index.html';
+function onOverlayClick(name) {
+  window.location = name + '/index.html';
 }
 
+function onCheckboxHtmlClick(checked, name) {
+  const element = document.getElementById('checkbox-css');
 
-function onHtmlClick(value) {
-  const elementId = 'frame-overlay-' + value;
-  const file = value + '/index.html';
+  element.checked = false;
 
-  toggleFileContent(elementId, file, 'HTML');
+  toggleFileContent(name, checked, 'index.html');
+}
+function onCheckboxCssClick(checked, name) {
+  const element = document.getElementById('checkbox-html');
+
+  element.checked = false;
+
+  toggleFileContent(name, checked, 'index.css');
 }
 
-
-function onCssClick(value) {
-  const elementId = 'frame-overlay-' + value;
-  const file = value + '/index.css';
-
-  toggleFileContent(elementId, file, 'CSS');
-}
-
-
-
-function toggleFileContent(elementId, file, buttonId) {
+function toggleFileContent(name, checked, file) {
+  const elementId = 'frame-overlay-' + name;
+  const path = name + '/' + file;
   const element = document.getElementById(elementId);
 
-  if (toggler[elementId] === buttonId) {
+  if (!checked) {
     element.className = 'frame-overlay';
     element.innerHTML = null;
-    toggler[elementId] = undefined;
+    element.onclick = () => onOverlayClick(name);
     return;
   }
-
-  toggler[elementId] = buttonId;
 
   const http = new XMLHttpRequest();
 
   element.className = 'frame-overlay-text';
+  element.onclick = null;
 
   http.onreadystatechange = function () {
     element.innerHTML = '<xmp class="prettyprint">' + this.responseText + '</xmp>';
     PR.prettyPrint()
   };
 
-  http.open("GET", file, true);
+  http.open("GET", path, true);
   http.send();
 }
 
