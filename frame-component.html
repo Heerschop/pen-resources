@@ -4,11 +4,11 @@
       {{name}}
     </h3>
     <label class="toggle-button">
-      <input id="checkbox-html" type="checkbox" onclick="onCheckboxHtmlClick(event.srcElement.checked,'{{name}}')">
+      <input id="checkbox-html-{{name}}" type="checkbox" onclick="onCheckboxHtmlClick(event.srcElement.checked,'{{name}}')">
       <span>html</span>
     </label>
     <label class="toggle-button">
-      <input id="checkbox-css" type="checkbox" onclick="onCheckboxCssClick(event.srcElement.checked,'{{name}}')">
+      <input id="checkbox-css-{{name}}" type="checkbox" onclick="onCheckboxCssClick(event.srcElement.checked,'{{name}}')">
       <span>css</span>
     </label>
     <button class="header-button" onclick="onPenClick('{{pen-name}}')">pen</button>

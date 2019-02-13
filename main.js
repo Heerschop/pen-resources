@@ -3,14 +3,14 @@ function onOverlayClick(name) {
 }
 
 function onCheckboxHtmlClick(checked, name) {
-  const element = document.getElementById('checkbox-css');
+  const element = document.getElementById('checkbox-css-' + name);
 
   element.checked = false;
 
   toggleFileContent(name, checked, 'index.html');
 }
 function onCheckboxCssClick(checked, name) {
-  const element = document.getElementById('checkbox-html');
+  const element = document.getElementById('checkbox-html-' + name);
 
   element.checked = false;
 
@@ -31,13 +31,23 @@ function toggleFileContent(name, checked, file) {
 
   const http = new XMLHttpRequest();
 
-  element.className = 'frame-overlay-text';
-  element.onclick = null;
 
   http.onreadystatechange = function () {
-    element.innerHTML = '<xmp class="prettyprint">' + this.responseText + '</xmp>';
-    PR.prettyPrint()
-  };
+    if (this.readyState == 4) {
+      element.className = 'frame-overlay-text';
+      element.onclick = null;
+
+      if (this.status == 200) {
+        element.innerHTML = '<xmp class="prettyprint">' + this.responseText + '</xmp>';;
+        PR.prettyPrint()
+      }
+
+      if (this.status == 404) {
+        element.innerHTML = "File not found: " + path;
+      }
+    }
+
+  }
 
   http.open("GET", path, true);
   http.send();
