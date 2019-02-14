@@ -9,7 +9,8 @@
 * [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
 * [Shareicon](https://www.shareicon.net/tag/css-symbol)
 
-* [https://github.com/syntaxhighlighter/syntaxhighlighter](syntaxhighlighter)
-* [https://github.com/google/code-prettify](code-prettify)
-* [https://www.npmjs.com/package/markdown-it](markdown-it)
-* [https://github.com/evilstreak/markdown-js](markdown-js)
+* [syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter)
+* [code-prettify](https://github.com/google/code-prettify)
+* [markdown-it](https://www.npmjs.com/package/markdown-it)
+* [highlight.js](https://highlightjs.org/)
+* [markdown-js](https://github.com/evilstreak/markdown-js)

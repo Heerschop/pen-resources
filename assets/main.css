@@ -164,3 +164,27 @@ button:focus {
 input:checked + span {
   background: rgba(255, 0, 0, 0.6);
 }
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+code {
+  width: 100%;
+  background: black;
+}
