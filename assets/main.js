@@ -2,7 +2,7 @@ const markdown = window.markdownit({
   highlight: function (str, lang) {
     if (lang && hljs.getLanguage(lang)) {
       try {
-        return hljs.highlight(lang, str).value;
+        return '<div class="code-block">' + hljs.highlight(lang, str).value + '</div>';
       } catch (__) { }
     }
 
