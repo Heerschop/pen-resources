@@ -1,8 +1,7 @@
 # General purpose styling examples
 
-[Codepen](https://codepen.io/heerschop/pens/public/)
-[GitHub Pages](https://heerschop.github.io/pen)
-
+* [GitHub Pages](https://heerschop.github.io/pen)
+* [Codepen](https://codepen.io/heerschop/pens/public/)
 
 ### Resources
 * [How TO - Include HTML](https://www.w3schools.com/howto/howto_html_include.asp)

@@ -1,0 +1,18 @@
+@import "https://heerschop.github.io/pen/default.css";
+
+body > div {
+  min-width: calc(320px * 2 + 40px);
+  min-height: 320px;
+  width: calc(320px * 2 + 40px);
+  padding: 4px;
+}
+
+body > div div {
+  width: auto;
+  height: auto;
+  margin: 0px;
+}
+
+body > div div:nth-child(2n) {
+  background: rgba(128, 0, 128, 0.8);
+}

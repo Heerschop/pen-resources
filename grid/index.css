@@ -1,0 +1,8 @@
+@import "https://heerschop.github.io/pen/grid/style.css";
+
+.container {
+  display: grid;
+  grid-template-rows: auto 16px auto 16px auto;
+  grid-template-columns: auto 16px auto 16px auto;
+  grid-gap: 4px;
+}
