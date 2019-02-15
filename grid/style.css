@@ -13,14 +13,6 @@ body > div div {
   margin: 0px;
 }
 
-body > div div:nth-child(5n + 1) {
-  background: rgba(128, 0, 128, 0.8);
-}
-
-body > div div:nth-child(5n + 2) {
-  background: rgba(128, 0, 128, 0.8);
-}
-
-body > div div:nth-child(9) {
+body > div div:nth-child(-n + 5) {
   background: rgba(128, 0, 128, 0.8);
 }
