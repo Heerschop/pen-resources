@@ -4,10 +4,10 @@
 * [Codepen](https://codepen.io/heerschop/pens/public/)
 
 ### Resources
+
 * [How TO - Include HTML](https://www.w3schools.com/howto/howto_html_include.asp)
 * [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
 * [Shareicon](https://www.shareicon.net/tag/css-symbol)
-
 * [syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter)
 * [code-prettify](https://github.com/google/code-prettify)
 * [markdown-it](https://www.npmjs.com/package/markdown-it)
