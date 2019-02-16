@@ -1,7 +1,7 @@
 @import "https://heerschop.github.io/pen/default.css";
 
 body > div {
-  min-width: calc(320px * 2 + 40px);
-  min-height: 320px;
+  min-width: calc(278px * 2 + 40px);
+  min-height: 290px;
   width: calc(320px * 2 + 40px);
 }
