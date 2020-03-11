@@ -79,6 +79,7 @@ body {
   top: 0px;
   bottom: 0px;
   right: 0px;
+  cursor: pointer;
 }
 
 .frame-overlay:hover {
