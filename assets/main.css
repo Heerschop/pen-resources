@@ -48,6 +48,10 @@ body {
   display: flex;
 }
 
+.header-title:hover a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .header-button {
   border: 0px;
   background: rgba(255, 0, 0, 0.2);
@@ -188,4 +192,10 @@ a:active {
 .code-block {
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
+}
+
+.github-logo {
+  fill: currentColor;
+  vertical-align: middle !important;
+  margin-right: 10px;
 }
