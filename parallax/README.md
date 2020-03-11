@@ -1,4 +1,5 @@
-# Responsive
+# Parallax
 
-* [CSS flex-flow Property](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp)
-* [CSS align-content Property](https://www.w3schools.com/cssref/css3_pr_align-content.asp)
+* [CSS perspective Property](https://www.w3schools.com/cssref/css3_pr_perspective.asp)
+* [CSS overflow-y Property](https://www.w3schools.com/cssref/css3_pr_overflow-y.asp)
+* [CSS transform Property](https://www.w3schools.com/cssref/css3_pr_transform.asp)
