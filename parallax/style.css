@@ -6,11 +6,19 @@ body > div {
   width: calc(320px * 2 + 40px);
 }
 
-body > div div {
-  height: 98px;
+body > div > div {
+  height: 1000px;
   width: 33%;
+  padding: 0px;
+}
+
+body > div > div > div {
+  width: auto;
+  height: 50px;
+
+  color: rgba(255, 255, 255, 0.8);
   align-items: center;
   justify-content: center;
-  display: flex;
+  font-weight: bold;
   margin: 4px;
 }
