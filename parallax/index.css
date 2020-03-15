@@ -8,14 +8,20 @@
 }
 
 .back {
-  transform: translateZ(-0.5px) scale(1.5) translate(-76px, +116px);
+  height: 320%;
+  width: 33%;
+  transform: translateZ(-0.5px) scale(1.5) translate(-35%, 11.5%);
 }
 
 .middle {
+  height: 320%;
+  width: 33%;
   transform: translateZ(+0px) scale(1) translate(+0px, +0px);
-  margin-bottom: 300px;
+  margin-bottom: 500px;
 }
 
 .front {
-  transform: translateZ(+0.5px) scale(0.5) translate(-212px, -346px);
+  height: 320%;
+  width: 33%;
+  transform: translateZ(+0.5px) scale(0.5) translate(-98.5%, -34.6%);
 }

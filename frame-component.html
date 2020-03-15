@@ -23,6 +23,6 @@
   </div>
   <div class="frame-container">
     <iframe scrolling="no" frameborder="0" src="{{name}}/index.html"></iframe>
-    <div id="frame-overlay-{{name}}" class="frame-overlay" onclick="onOverlayClick('{{name}}')"></div>
+    <div contenteditable="true" oncut="return false" onpaste="return false" onkeydown="return onKeydown()" id="frame-overlay-{{name}}" class="frame-overlay" onclick="onOverlayClick('{{name}}')"></div>
   </div>
 </div>

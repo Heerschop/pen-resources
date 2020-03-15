@@ -78,3 +78,18 @@ function toggleFileContent(name, checked, file) {
   http.open("GET", path, true);
   http.send();
 }
+
+function onKeydown() {
+  const allowedKeys = [
+    'ArrowLeft',
+    'ArrowRight',
+    'ArrowUp',
+    'ArrowDown',
+    'Home',
+    'End',
+    'PageUp',
+    'PageDown'
+  ];
+
+  return event.ctrlKey || allowedKeys.includes(event.code);
+}
