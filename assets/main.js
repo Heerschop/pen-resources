@@ -44,6 +44,8 @@ function toggleFileContent(name, checked, file) {
   const path = name + '/' + file;
   const element = document.getElementById(elementId);
 
+  element.contentEditable = file !== 'README.md';
+
   if (!checked) {
     element.className = 'frame-overlay';
     element.innerHTML = null;
